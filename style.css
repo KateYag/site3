@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Gogol";
-    src: url("/fonts/ofont.ru_Gogol.ttf");
+    src: url("fonts/ofont.ru_Gogol.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Quant Antiqua";
-    src: url("/fonts/ofont.ru_Quant Antiqua.ttf");
+    src: url("fonts/ofont.ru_Quant Antiqua.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Stolzl";
-    src: url("/fonts/ofont.ru_Stolzl.ttf");
+    src: url("fonts/ofont.ru_Stolzl.ttf") format("truetype");
 }
 
 * {
