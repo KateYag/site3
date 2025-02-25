@@ -1,0 +1,474 @@
+@font-face {
+    font-family: "Gogol";
+    src: url("/fonts/ofont.ru_Gogol.ttf");
+}
+
+@font-face {
+    font-family: "Quant Antiqua";
+    src: url("/fonts/ofont.ru_Quant Antiqua.ttf");
+}
+
+@font-face {
+    font-family: "Stolzl";
+    src: url("/fonts/ofont.ru_Stolzl.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Stolzl", sans-serif;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+span {
+    font-family: "League Script", sans-serif;
+    font-weight: normal;
+
+}
+.invite {
+    background-color: #f8f7f6;
+
+}
+.program-title, .dresscode-title, .wishes-title, .organizer-title, .location-title, .presence-title, .timout-title {
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.program span, .dresscode span, .wishes span, .organizer span, .location span, .presence span {
+    font-size: 70px;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.program, .organizer, .location, .dresscode, .wishes, .presence {
+    background-color: #f8f7f6;
+    padding: 100px 0 100px 0;
+    border-bottom: 2px solid #8d8987;
+}
+
+
+
+
+.invite-title {
+    width: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #d4cfcc;
+    color: #8d8987;
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.invite-title-content {
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+}
+
+.invite-title-content span {
+    font-size: 24px;
+}
+
+.invite .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 165px 0;
+
+}
+
+.invite-name {
+    font-size: 120px;
+    max-width: 528px;
+    text-align: center;
+    line-height: 0.8;
+
+}
+
+
+
+.photo-line {
+    width: 100%;
+    height: 300px;
+    background-color: #515253;
+}
+.photo {
+    position: relative;
+
+}
+.photo-one {
+    position: absolute;
+    top: -152px;
+    left: -85px;
+}
+.photo-one .polaroid{
+    position: relative;
+    width: 600px;
+    rotate: 346deg;
+    z-index: 2;
+
+
+}
+
+.photo-one span {
+    position: absolute;
+    top: 79%;
+    left: 48%;
+    z-index: 3;
+    rotate: 346deg;
+    font-family: "Gogol", sans-serif;
+    font-size: 30px;
+
+}
+.foto {
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.foto img {
+    width: 407px;
+    rotate: 346deg;
+
+}
+.photo-two {
+    position: absolute;
+    top: -50%;
+    right: 0;
+    display: grid;
+    width: 320px;
+    grid-template-columns: 1fr; /* Одна колонка */
+    grid-auto-rows: 200px; /* Высота каждой строки 200px */
+    gap: 0; /* Отступы между изображениями */
+    justify-items: center; /* Выравниваем по центру */
+    border: 3px solid white;
+}
+
+.photo-two img {
+    width: 100%; /* Чтобы картинки адаптировались */
+    height: 100%; /* Растягиваем на всю строку */
+    max-width: 400px; /* Ограничение ширины */
+    object-fit: cover; /* Обрезаем фото, чтобы оно влезло */
+    border: 3px solid white;
+}
+
+
+.main {
+    padding-top: 300px;
+    padding-bottom: 100px;
+    border-bottom: 2px solid #8d8987;
+}
+
+.dear {
+    font-size: 70px;
+    text-align: center;
+}
+
+.no-fonts {
+    text-align: center;
+    font-size: 42px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.main-info span {
+    font-family: "Gogol", sans-serif;
+    font-size: 70px;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.save {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    max-width: 528px;
+    margin: auto;
+}
+
+.event {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: center;
+    grid-template-rows: 164px
+
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.time-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.description {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.time-info .text {
+    font-size: 16px;
+}
+
+.icon.first img {
+    width: 160px;
+}
+
+.icon.second img, .icon.three img, .icon.four img {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+.dresscode-info-text {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.dresscode-info-blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dresscode-info-block {
+    width: 200px;
+    height: 120px;
+}
+
+.dresscode-info-block.first {
+    background-color: #c9c4c4;
+}
+
+.dresscode-info-block.second {
+    background-color: #e7ddd4;
+}
+
+.dresscode-info-block.third {
+    background-color: #5c5c5c;
+}
+
+.dresscode-info-block.four {
+    background-color: #302f2e;
+}
+
+.wishes-text {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.organizer-text {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.organizer-name, .organizer-phone {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.organizer {
+    text-align: center;
+}
+.organizer a {
+    font-size: 30px;
+    text-decoration: none;
+    outline: none;
+    color: #5c5c5c;
+    border: 2px solid #5c5c5c;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.organizer a:hover {
+    color: #d4cfcc;
+    background-color: #5c5c5c;
+    border: 2px solid #5c5c5c;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+.location-info p{
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.location-address {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.location-address p {
+    text-align: left;
+}
+.location-address a {
+    font-size: 30px;
+    text-decoration: none;
+    outline: none;
+    color: #5c5c5c;
+    display: inline-block;
+    cursor: pointer;
+}
+.location-address a:hover {
+    color: #262626;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.presence-text {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.des {
+    font-size: 18px;
+}
+
+.wedding-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 30px;
+    font-family: "Cormorant Infant", sans-serif;
+
+    fieldset {
+        border: none;
+        margin-bottom: 15px;
+    }
+
+    legend {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    label {
+        display: block;
+        margin: 5px 0;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 97%;
+        padding: 8px;
+        border: 1px solid #5c5c5c;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    textarea {
+        min-height: 100px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #5c5c5c;
+        color: #f8efea;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+
+        &:hover {
+            background: #262626;
+        }
+    }
+}
+
+.timout {
+    padding: 50px 0 50px 0;
+    background-color: #d4cfcc;
+}
+.timout-title {
+    font-size: 55px;
+    color: #262626;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #8d8987;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.time-box span {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.time-box p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+
