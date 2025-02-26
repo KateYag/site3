@@ -144,7 +144,7 @@ span {
 }
 .foto {
     position: absolute;
-    top: 47%;
+    top: 48%;
     left: 47%;
     transform: translate(-50%, -50%);
     z-index: 1;

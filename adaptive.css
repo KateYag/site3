@@ -366,7 +366,7 @@
         padding: 50px 0 50px 0;
     }
     .invite-name {
-        font-size: 53px;
+        font-size: 57px;
         max-width: 280px;
 
     }
@@ -452,6 +452,12 @@
     }
     .wedding-form {
         font-size: 20px;
+    }
+
+    .wedding-form {
+        button {
+            width: 104%;
+        }
     }
     .timout {
         padding: 20px 0 20px 0;
