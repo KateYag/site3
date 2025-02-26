@@ -14,7 +14,7 @@
 
 @media (max-width: 625px) {
     .container {
-        max-width: 425px;
+        max-width: 392px;
     }
 
     .program-title, .dresscode-title, .wishes-title, .organizer-title, .location-title, .presence-title, .timout-title {
